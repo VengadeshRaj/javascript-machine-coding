@@ -1,5 +1,5 @@
 const searchBox = document.getElementById("search-box");
 
-searchBox.addEventListener("change", function () {
+searchBox.addEventListener("input", function () {
   console.log("ett");
 });
