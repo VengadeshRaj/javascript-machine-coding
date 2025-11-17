@@ -8,3 +8,4 @@ It uses a debounced search mechanism to efficiently filter and display fruit sug
 - HTML
 - CSS
 - JavaScript
+- Debouncing mechanism
