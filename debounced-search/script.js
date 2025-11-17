@@ -21,7 +21,7 @@ const FRUITS = [
   "Dragonfruit",
 ];
 
-const DELAY = 300;
+const DELAY = 500;
 
 const searchBox = document.getElementById("search-box");
 const suggestionsList = document.getElementById("suggested-fruits");
@@ -33,11 +33,12 @@ const onSuggestionClick = (e) => {
   suggestionsList.innerHTML = "";
 };
 
-// There is no dedicated onchange event in text box, We need to use "input"
+// There is no dedicated onchange event in text box, We need to use "input" event
 searchBox.addEventListener("input", function (e) {
   const input = e.target.value;
+  // Removing previous suggestion from "ul" and "li"
   suggestionsList.innerHTML = "";
-  
+
   if (timerId) clearTimeout(timerId);
 
   if (input) {
@@ -47,6 +48,7 @@ searchBox.addEventListener("input", function (e) {
       });
 
       suggestions.forEach((fruit) => {
+        // Create new "li" element
         const li = document.createElement("li");
         li.textContent = fruit;
         li.id = "fruit-list";
