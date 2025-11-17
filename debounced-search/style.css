@@ -34,6 +34,14 @@
 #suggested-fruits{
      list-style: none;
      font-size: medium;
-     font-weight: 400;
+     font-weight:bold;
      align-items: left;
+     background-color: aliceblue;
+     margin: 0px;
+     border-radius: 5px;
+     cursor: pointer;
+}
+
+#fruit-list{
+    padding:10px
 }
