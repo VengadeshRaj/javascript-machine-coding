@@ -9,8 +9,17 @@
   </head>
   <body>
     <div class="container">
-      <label>Search</label>
-      <input id="search-box" placeholder="Search a fruit.." />
+      <div class="input-container">
+        <label class="search-label">Search any Fruit: </label>
+        <div class="text-box-container">
+          <input
+            id="search-box"
+            class="search-box"
+            placeholder="name a fruit.."
+          />
+          <ul id="suggested-fruits"></ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>
