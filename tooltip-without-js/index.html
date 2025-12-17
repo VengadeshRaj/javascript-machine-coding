@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        background-color: lightgrey;
+      }
+      .tooltip {
+        position: relative;
+        border: 1px solid black;
+        border-radius: 50%;
+        color: black;
+        width: 10px;
+        text-align: center;
+        padding: 5px;
+        cursor: pointer;
+      }
+      .tooltip:hover .message {
+        display: block;
+      }
+      .message {
+        display: none;
+        position: absolute;
+        background-color: darkgray;
+        padding: 5px;
+        border-radius: 2px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="tooltip">
+        i <span class="message">Hello from tooptip</span>
+      </div>
+    </div>
+  </body>
+</html>
