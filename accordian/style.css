@@ -1,3 +1,39 @@
-*{
-    background-color: rgb(220, 235, 235);
+* {
+  background-color: rgb(220, 235, 235);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.faq-section {
+  align-items: flex-start;
+}
+
+.accordian {
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding:5px
+}
+
+.question-accordian {
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+
+.accordian-button{
+    font-size: larger;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }

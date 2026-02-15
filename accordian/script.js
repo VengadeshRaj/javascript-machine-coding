@@ -40,9 +40,20 @@ const faqField = document.getElementById("faq");
 
 function createFAQ() {
   for (let i = 0; i < FAQS.length; i++) {
-    const qus = document.createElement("li");
+    const faqItem = document.createElement("div");
+    faqItem.className = "accordian";
+    const qus = document.createElement("div");
+    qus.className = "question-accordian";
+    const accordButton = document.createElement("span");
+    accordButton.innerHTML = "+"
+    accordButton.className = "accordian-button";
+    qus.appendChild(accordButton)
     const ans = document.createElement("div");
-    faqItem.innerHTML = FAQS[i].question;
+    qus.innerHTML = FAQS[i].question;
+    ans.innerHTML = FAQS[i].answer;
+    faqItem.appendChild(qus);
+    faqItem.appendChild(ans);
+    faqField.appendChild(faqItem);
   }
 }
 
